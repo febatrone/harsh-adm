@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "name": "Jimil Pandit",
+      "role": "Senior Manager International Business",
+      "company": "Exago Chemical",
+      "quote": "Harsh demonstrated exceptional analytical ability and strategic thinking. He was highly proactive, collaborative, and contributed significantly to our operational workflow optimization projects.",
+      "avatar": "",
+      "order": 1
+    },
+    {
+      "name": "Aditya Dave",
+      "role": "Founder & CEO",
+      "company": "Cibos Techno Solutions",
+      "quote": "Harsh's work on our automated vending machine R&D was outstanding. He has a unique combination of embedded systems technical skill and business execution mindset that makes him an asset to any team.",
+      "avatar": "",
+      "order": 2
+    }
+  ]
+}

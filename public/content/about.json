@@ -1,0 +1,37 @@
+{
+  "aboutText": "Electronics and Communication Engineering student with hands-on experience in embedded systems, product design, and digital marketing. Proven ability to bridge technical and creative domains through internships across R&D, testing, and operations management.",
+  "qualities": [
+    {
+      "icon": "Target",
+      "title": "Objective Driven",
+      "desc": "Focusing on high-level strategy and measurable outcomes in every project."
+    },
+    {
+      "icon": "Zap",
+      "title": "Cross-Functional",
+      "desc": "Bridging the gap between engineering complexity and business execution."
+    },
+    {
+      "icon": "User",
+      "title": "Leadership",
+      "desc": "Proven ability to lead teams through complex technical and operational phases."
+    }
+  ],
+  "traits": [
+    {
+      "label": "Electronics Eng",
+      "icon": "Terminal",
+      "color": "bg-primary-container"
+    },
+    {
+      "label": "Product Design",
+      "icon": "Layout",
+      "color": "bg-secondary-fixed"
+    },
+    {
+      "label": "Business Analysis",
+      "icon": "BarChart",
+      "color": "bg-primary"
+    }
+  ]
+}

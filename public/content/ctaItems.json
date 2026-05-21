@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "order": 1, "n": "01", "l": "Leadership" },
+    { "order": 2, "n": "02", "l": "R&D" },
+    { "order": 3, "n": "03", "l": "Product" },
+    { "order": 4, "n": "04", "l": "Execution" }
+  ]
+}

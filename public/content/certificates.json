@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "category": "recommendations",
+      "title": "Recommendation Letter",
+      "issuer": "Exago Chemical",
+      "signer": "Jimil Pandit (Senior Manager International Business)",
+      "date": "Nov 2025",
+      "desc": "Commended for exceptional analytical ability, professionalism, and cross-functional team collaboration during the Business Operations internship.",
+      "order": 1
+    },
+    {
+      "category": "recommendations",
+      "title": "Recommendation Letter",
+      "issuer": "Cibos Techno Solutions",
+      "signer": "Aditya Dave (Founder & CEO)",
+      "date": "Jan 2025",
+      "desc": "Endorsed for significant contributions to battery-operated innovative solutions and expertise in technology and operations.",
+      "order": 2
+    },
+    {
+      "category": "internships",
+      "title": "ANPR Project Certificate",
+      "issuer": "Indian Railways",
+      "signer": "Swayam Deep Singh (DY CMM)",
+      "date": "Feb 2026",
+      "desc": "Certified completion of the ANPR & GPS project, demonstrating leadership and technical skills at the Sabarmati division.",
+      "order": 3
+    },
+    {
+      "category": "internships",
+      "title": "Business Ops Internship",
+      "issuer": "Exago",
+      "signer": "Management Team",
+      "date": "Nov 2025",
+      "desc": "Certified tenure as Business Operations & Strategy Intern, focusing on global outreach and process optimization.",
+      "order": 4
+    },
+    {
+      "category": "internships",
+      "title": "Technology Internship",
+      "issuer": "Cibos Techno Solutions",
+      "signer": "Aditya Dave (Founder & CEO)",
+      "date": "Jan 2025",
+      "desc": "Certified development of an Automatic Water Vending Machine project as a Technology Intern.",
+      "order": 5
+    },
+    {
+      "category": "skills",
+      "title": "Advanced Data Analysis",
+      "issuer": "Professional Certification",
+      "signer": "Global Educators",
+      "date": "2025",
+      "desc": "Certified proficiency in PowerBI and Advanced Excel for business intelligence and data-driven decision making.",
+      "order": 6
+    }
+  ]
+}

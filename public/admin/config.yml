@@ -1,0 +1,178 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/media
+public_folder: /media
+
+collections:
+  - name: config
+    label: Site Configuration
+    files:
+      - file: public/content/config.json
+        label: Global Config
+        name: main
+        fields:
+          - { label: Profile Name, name: profileName, widget: string }
+          - { label: Hero Title Line 1, name: heroTitleLine1, widget: string }
+          - { label: Hero Title Line 2, name: heroTitleLine2, widget: string }
+          - { label: Hero Title Line 3, name: heroTitleLine3, widget: string }
+          - { label: Hero Description, name: heroDescription, widget: text }
+          - { label: LinkedIn URL, name: linkedin, widget: string }
+          - { label: Inquiry Email, name: email, widget: string }
+
+  - name: about
+    label: About & Traits
+    files:
+      - file: public/content/about.json
+        label: About Section
+        name: main
+        fields:
+          - { label: About Biography Text, name: aboutText, widget: text }
+          - label: Key Qualities
+            name: qualities
+            widget: list
+            fields:
+              - { label: Icon Name, name: icon, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+          - label: Personal Traits
+            name: traits
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Icon Name, name: icon, widget: string }
+              - { label: Color Class, name: color, widget: string }
+
+  - name: ctaItems
+    label: CTA Items
+    files:
+      - file: public/content/ctaItems.json
+        label: CTA Items
+        name: main
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: Display Order, name: order, widget: number, value_type: int, required: false }
+              - { label: Number, name: n, widget: string }
+              - { label: Label, name: l, widget: string }
+
+  - name: skills
+    label: Skills Matrix
+    files:
+      - file: public/content/skills.json
+        label: Skills Groups
+        name: main
+        fields:
+          - label: Skill Categories
+            name: items
+            widget: list
+            fields:
+              - { label: Category Title, name: title, widget: string }
+              - { label: Accent Color Class, name: accent, widget: string }
+              - { label: Bullet Character, name: bullet, widget: string }
+              - label: Skill Items
+                name: items
+                widget: list
+                field:
+                  { label: Skill, name: skill, widget: string }
+              - { label: Display Order, name: order, widget: number, value_type: int }
+
+  - name: projects
+    label: Projects & Selected Works
+    files:
+      - file: public/content/projects.json
+        label: Selected Works
+        name: main
+        fields:
+          - label: Project Items
+            name: items
+            widget: list
+            fields:
+              - { label: Project Numbering, name: n, widget: string }
+              - { label: Project Title, name: title, widget: string }
+              - { label: Project Description, name: desc, widget: text }
+              - label: Technologies / Tags
+                name: tags
+                widget: list
+                field:
+                  { label: Tag, name: tag, widget: string }
+              - { label: Management Label, name: label, widget: string }
+              - { label: CTA Text, name: cta, widget: string }
+              - { label: Color Token, name: color, widget: string }
+              - { label: Display Order, name: order, widget: number, value_type: int }
+
+  - name: experiences
+    label: Professional Experiences
+    files:
+      - file: public/content/experiences.json
+        label: Work Timeline
+        name: main
+        fields:
+          - label: Experience Items
+            name: items
+            widget: list
+            fields:
+              - { label: Time Period, name: period, widget: string }
+              - { label: Company / Organization, name: title, widget: string }
+              - { label: Job Role, name: role, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - { label: Accent Color, name: accent, widget: string }
+              - { label: Icon Symbol, name: icon, widget: string }
+              - { label: Display Order, name: order, widget: number, value_type: int }
+
+  - name: certificates
+    label: Certificates
+    files:
+      - file: public/content/certificates.json
+        label: Certificate Items
+        name: main
+        fields:
+          - label: Certificates
+            name: items
+            widget: list
+            fields:
+              - { label: Category, name: category, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Issuer, name: issuer, widget: string }
+              - { label: Signer, name: signer, widget: string }
+              - { label: Date, name: date, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - { label: Display Order, name: order, widget: number, value_type: int }
+
+  - name: highlights
+    label: Highlights
+    files:
+      - file: public/content/highlights.json
+        label: Highlights
+        name: main
+        fields:
+          - label: Highlight Items
+            name: items
+            widget: list
+            fields:
+              - { label: Number, name: k, widget: string }
+              - { label: Title, name: t, widget: string }
+              - { label: Description, name: d, widget: text }
+              - { label: Tag, name: tag, widget: string }
+              - { label: Display Order, name: order, widget: number, value_type: int }
+
+  - name: education
+    label: Education Details
+    files:
+      - file: public/content/education.json
+        label: Academic History
+        name: main
+        fields:
+          - label: Education Entries
+            name: items
+            widget: list
+            fields:
+              - { label: Degree & Program, name: level, widget: string }
+              - { label: School / Institution, name: school, widget: string }
+              - { label: Date Range, name: date, widget: string }
+              - { label: Specialization, name: specialization, widget: string }
+              - { label: Notes, name: note, widget: text }
+              - { label: Display Order, name: order, widget: number, value_type: int }
