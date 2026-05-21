@@ -1,0 +1,242 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/media
+public_folder: /media
+
+collections:
+  - name: "config"
+    label: "Site Configurations"
+    files:
+      - file: "public/content/config.json"
+        label: "Global Config & Hero"
+        name: "main"
+        fields:
+          - { label: "Profile Name", name: "profileName", widget: "string" }
+          - { label: "Hero Title Line 1", name: "heroTitleLine1", widget: "string" }
+          - { label: "Hero Title Line 2", name: "heroTitleLine2", widget: "string" }
+          - { label: "Hero Title Line 3", name: "heroTitleLine3", widget: "string" }
+          - { label: "Hero Description", name: "heroDescription", widget: "text" }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+          - { label: "Inquiry Email", name: "email", widget: "string" }
+
+  - name: "profile"
+    label: "Profile Overview"
+    files:
+      - file: "public/content/profile.json"
+        label: "Profile Overview Details"
+        name: "details"
+        fields:
+          - { label: "Profile Name", name: "profileName", widget: "string" }
+          - { label: "Profile Role", name: "profileRole", widget: "string" }
+          - { label: "Profile Description", name: "profileDescription", widget: "text" }
+          - { label: "Avatar Image", name: "avatarImage", widget: "image", required: false }
+          - { label: "Resume File", name: "resumeFile", widget: "file", required: false }
+
+  - name: "about"
+    label: "About & Traits"
+    files:
+      - file: "public/content/about.json"
+        label: "About Section Contents"
+        name: "about"
+        fields:
+          - { label: "About Biography Text", name: "aboutText", widget: "text" }
+          - label: "Key Qualities"
+            name: "qualities"
+            widget: "list"
+            fields:
+              - { label: "Icon Name (Lucide)", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+          - label: "Personal Traits"
+            name: "traits"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Icon Name (Lucide)", name: "icon", widget: "string" }
+              - { label: "CSS Color Class", name: "color", widget: "string" }
+
+  - name: "skills"
+    label: "Skills Matrix"
+    files:
+      - file: "public/content/skills.json"
+        label: "Skills Groups"
+        name: "skills"
+        fields:
+          - label: "Skills Category List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Category Title", name: "title", widget: "string" }
+              - { label: "Accent Color Class", name: "accent", widget: "string" }
+              - { label: "Bullet Character", name: "bullet", widget: "string" }
+              - { label: "Skills List", name: "items", widget: "list", field: { widget: "string" } }
+              - { label: "Display Order", name: "order", widget: "number", value_type: "int" }
+
+  - name: "projects"
+    label: "Projects & Selected Works"
+    files:
+      - file: "public/content/projects.json"
+        label: "Selected Works"
+        name: "projects"
+        fields:
+          - label: "Project Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Project Numbering (e.g. 01.)", name: "n", widget: "string" }
+              - { label: "Project Title", name: "title", widget: "string" }
+              - { label: "Project Description", name: "desc", widget: "text" }
+              - { label: "Technologies / Tags", name: "tags", widget: "list", field: { widget: "string" } }
+              - { label: "Management Label (e.g. Entrepreneurship)", name: "label", widget: "string" }
+              - { label: "Call to Action Text (e.g. Pitch Deck)", name: "cta", widget: "string" }
+              - { label: "Vibrant Color Token (e.g. primary-container)", name: "color", widget: "string" }
+              - { label: "Display Order", name: "order", widget: "number", value_type: "int" }
+
+  - name: "experiences"
+    label: "Professional Experiences"
+    files:
+      - file: "public/content/experiences.json"
+        label: "Timeline Work History"
+        name: "experiences"
+        fields:
+          - label: "Experience Timeline Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Time Period", name: "period", widget: "string" }
+              - { label: "Company / Organization Name", name: "title", widget: "string" }
+              - { label: "Job Role", name: "role", widget: "string" }
+              - { label: "Job Description details", name: "desc", widget: "text" }
+              - { label: "Timeline Accent Color (e.g. primary)", name: "accent", widget: "string" }
+              - { label: "Timeline Bullet Symbol (e.g. ◈)", name: "icon", widget: "string" }
+              - { label: "Display Order", name: "order", widget: "number", value_type: "int" }
+
+  - name: "certificates"
+    label: "Certificates"
+    files:
+      - file: "public/content/certificates.json"
+        label: "Internships & Skills Certificates"
+        name: "certificates"
+        fields:
+          - label: "Certificates Categories"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Category Title (e.g. Recommendations)", name: "title", widget: "string" }
+              - label: "Certificate Items"
+                name: "certs"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Issuer", name: "issuer", widget: "string" }
+                  - { label: "Date / Period", name: "date", widget: "string" }
+                  - { label: "Description details", name: "desc", widget: "text" }
+                  - { label: "Credential Link / PDF File", name: "link", widget: "file", required: false }
+
+  - name: "highlights"
+    label: "Highlights"
+    files:
+      - file: "public/content/highlights.json"
+        label: "Academic & Career Highlights"
+        name: "highlights"
+        fields:
+          - label: "Highlight Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Key Number (e.g. 01)", name: "k", widget: "string" }
+              - { label: "Highlight Title", name: "t", widget: "string" }
+              - { label: "Description details", name: "d", widget: "text" }
+              - { label: "Category Tag", name: "tag", widget: "string" }
+              - { label: "Display Order", name: "order", widget: "number", value_type: "int" }
+
+  - name: "education"
+    label: "Education Details"
+    files:
+      - file: "public/content/education.json"
+        label: "Academic History"
+        name: "education"
+        fields:
+          - label: "Education Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Institution Name", name: "institution", widget: "string" }
+              - { label: "Degree & Specialization", name: "degree", widget: "string" }
+              - { label: "Academic Score (CGPA/Percentage)", name: "score", widget: "string" }
+              - { label: "Timeline / Duration", name: "duration", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Timeline Bullet Accent", name: "accent", widget: "string" }
+              - { label: "Display Order", name: "order", widget: "number", value_type: "int" }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    files:
+      - file: "public/content/testimonials.json"
+        label: "Client & Mentor Reviews"
+        name: "testimonials"
+        fields:
+          - label: "Testimonials List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Reviewer Name", name: "name", widget: "string" }
+              - { label: "Reviewer Job Title", name: "role", widget: "string" }
+              - { label: "Company", name: "company", widget: "string" }
+              - { label: "Quote / Review Text", name: "quote", widget: "text" }
+              - { label: "Avatar Image", name: "avatar", widget: "image", required: false }
+              - { label: "Display Order", name: "order", widget: "number", value_type: "int" }
+
+  - name: "services"
+    label: "Services Offered"
+    files:
+      - file: "public/content/services.json"
+        label: "Service Items"
+        name: "services"
+        fields:
+          - label: "Services List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Service Title", name: "title", widget: "string" }
+              - { label: "Short Description", name: "description", widget: "text" }
+              - { label: "Lucide Icon Name", name: "icon", widget: "string" }
+              - { label: "Detailed Bullet Points", name: "details", widget: "list", field: { widget: "string" } }
+              - { label: "Display Order", name: "order", widget: "number", value_type: "int" }
+
+  - name: "social_links"
+    label: "Social Links"
+    files:
+      - file: "public/content/social_links.json"
+        label: "Social Profile Links"
+        name: "social_links"
+        fields:
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+          - { label: "GitHub URL", name: "github", widget: "string" }
+          - { label: "Contact Email", name: "email", widget: "string" }
+          - { label: "Twitter URL", name: "twitter", widget: "string", required: false }
+
+  - name: "resume_assets"
+    label: "Resume Assets"
+    files:
+      - file: "public/content/resume_assets.json"
+        label: "Curriculum Vitae Files"
+        name: "resume_assets"
+        fields:
+          - { label: "Resume PDF File", name: "resumeFile", widget: "file" }
+          - { label: "Updated Date", name: "updatedDate", widget: "string" }
+          - { label: "Version Tag", name: "version", widget: "string" }
+
+  - name: "contact_info"
+    label: "Contact & Location Info"
+    files:
+      - file: "public/content/contact_info.json"
+        label: "Contact Information"
+        name: "contact_info"
+        fields:
+          - { label: "Inquiry Email", name: "email", widget: "string" }
+          - { label: "Professional Location", name: "location", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string", required: false }
+          - { label: "Message / CTA Text", name: "message", widget: "string" }

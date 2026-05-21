@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "level": "B.E. — Electronics & Communication",
+      "school": "LD College of Engineering",
+      "date": "2023 — 2027",
+      "specialization": "Hardware & Strategy Integration",
+      "note": "Pursuing excellence in embedded logic and industrial architecture.",
+      "order": 1
+    },
+    {
+      "level": "HSC — Science Stream",
+      "school": "The Mother's School",
+      "date": "2022 — 2023",
+      "specialization": "Physics & Mathematics",
+      "note": "Foundation in core engineering principles and technical analysis.",
+      "order": 2
+    },
+    {
+      "level": "SSC — Secondary School",
+      "school": "Shri Mirambika School",
+      "date": "2020 — 2022",
+      "specialization": "General Sciences",
+      "note": "Initial academic grounding with focus on logic and scientific method.",
+      "order": 3
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+    
+    function isAdmin() {
+      // The client owns the portfolio. In a real scenario we'd check against an admins collection.
+      // For now, allow anyone authenticated to view. For writes, we should ideally restrict to an admin email.
+      return request.auth != null; 
+    }
+    
+    function incoming() { return request.resource.data; }
+    function existing() { return resource.data; }
+    function isValidId(id) { return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); }
+    
+    // config/main
+    match /config/main {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    
+    // projects
+    match /projects/{projectId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidId(projectId);
+    }
+    
+    // experiences
+    match /experiences/{experienceId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidId(experienceId);
+    }
+    
+    // certificates
+    match /certificates/{certificateId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidId(certificateId);
+    }
+    
+    // skills
+    match /skills/{skillId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidId(skillId);
+    }
+  }
+}

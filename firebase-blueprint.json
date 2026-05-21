@@ -1,0 +1,104 @@
+{
+  "entities": {
+    "siteConfig": {
+      "title": "Site Configuration",
+      "description": "Global portfolio configuration such as Hero texts, profile details.",
+      "type": "object",
+      "properties": {
+        "heroTitle": { "type": "string" },
+        "heroSubtitle": { "type": "string" },
+        "profileName": { "type": "string" },
+        "profileRole": { "type": "string" },
+        "profileDescription": { "type": "string" },
+        "email": { "type": "string" },
+        "linkedin": { "type": "string" }
+      }
+    },
+    "project": {
+      "title": "Project",
+      "description": "A portfolio project.",
+      "type": "object",
+      "properties": {
+        "n": { "type": "string" },
+        "title": { "type": "string" },
+        "desc": { "type": "string" },
+        "tags": { 
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "label": { "type": "string" },
+        "cta": { "type": "string" },
+        "color": { "type": "string" },
+        "order": { "type": "number" }
+      },
+      "required": ["title", "desc", "order"]
+    },
+    "experience": {
+      "title": "Experience",
+      "description": "Work experience entries.",
+      "type": "object",
+      "properties": {
+        "year": { "type": "string" },
+        "title": { "type": "string" },
+        "company": { "type": "string" },
+        "location": { "type": "string" },
+        "desc": { "type": "string" },
+        "logoColor": { "type": "string" },
+        "order": { "type": "number" }
+      },
+      "required": ["title", "company", "order"]
+    },
+    "certificate": {
+      "title": "Certificate",
+      "description": "A certificate or letter of recommendation.",
+      "type": "object",
+      "properties": {
+        "category": { "type": "string" },
+        "title": { "type": "string" },
+        "issuer": { "type": "string" },
+        "signer": { "type": "string" },
+        "date": { "type": "string" },
+        "desc": { "type": "string" },
+        "order": { "type": "number" }
+      },
+      "required": ["category", "title", "order"]
+    },
+    "skill": {
+      "title": "Skill",
+      "description": "A skill category and its skills.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "skills": { 
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "color": { "type": "string" },
+        "order": { "type": "number" }
+      },
+      "required": ["title", "skills", "order"]
+    }
+  },
+  "firestore": {
+    "/config/main": {
+      "schema": { "$ref": "#/entities/siteConfig" },
+      "description": "Global website configuration document."
+    },
+    "/projects/{projectId}": {
+      "schema": { "$ref": "#/entities/project" },
+      "description": "Projects displayed in the selected works section."
+    },
+    "/experiences/{experienceId}": {
+      "schema": { "$ref": "#/entities/experience" },
+      "description": "Experience entries."
+    },
+    "/certificates/{certificateId}": {
+      "schema": { "$ref": "#/entities/certificate" },
+      "description": "Certificates and letters."
+    },
+    "/skills/{skillId}": {
+      "schema": { "$ref": "#/entities/skill" },
+      "description": "Skill sets."
+    }
+  }
+}

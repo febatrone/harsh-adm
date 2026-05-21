@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "period": "15 May 2024 — 14 January 2025",
+      "title": "CIBOS Tech",
+      "role": "Technology / R&D Intern",
+      "desc": "Conceptualized and prototyped innovative vending machine designs and IoT sensor integrations for modern retail environments. Focused on precision hardware integration and system reliability.",
+      "accent": "primary",
+      "icon": "▣",
+      "order": 1
+    },
+    {
+      "period": "May 2025 — November 2025",
+      "title": "Exago Chemicals",
+      "role": "Business Operations & Strategy Intern",
+      "desc": "Optimized operational workflows, supported supply chain planning, and conducted market research to improve business efficiency in a leading pharmaceutical firm. Developed data-driven reports and contributed to strategic decision-making.",
+      "accent": "secondary-fixed",
+      "icon": "◈",
+      "order": 2
+    },
+    {
+      "period": "December 2025 — February 2026",
+      "title": "Indian Railways",
+      "role": "Project Lead",
+      "desc": "Leading a cross-functional team of 5 to develop an AI-driven ANPR system integrated with GPS for real-time track monitoring. Instrumental in testing and implementing innovative IoT systems.",
+      "accent": "primary",
+      "icon": "▰",
+      "order": 3
+    },
+    {
+      "period": "Startup Phase",
+      "title": "WashWizard",
+      "role": "Co-founder",
+      "desc": "A compact Washing Machine startup, Funded by SSIP - to cater daily laundry hassles of Hostellers, PG dwellers and Bachelors. Done R&D about the machine and developed novelty machine using CFD techniques and sustainable development.",
+      "accent": "secondary-fixed",
+      "icon": "◈",
+      "order": 4
+    }
+  ]
+}

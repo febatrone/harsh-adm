@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "title": "Analytical Tools",
+      "accent": "primary-container",
+      "bullet": "●",
+      "items": ["PowerBI", "Advanced Excel", "MATLAB", "Python", "C++", "C"],
+      "order": 1
+    },
+    {
+      "title": "Hardware & Design",
+      "accent": "secondary-fixed",
+      "bullet": "■",
+      "items": ["PCB Design", "Circuit Testing", "Fusion 360", "AutoCAD", "Blender"],
+      "order": 2
+    },
+    {
+      "title": "Strategic & Management",
+      "accent": "primary-container",
+      "bullet": "◆",
+      "items": [
+        "Leadership",
+        "Team Coordination",
+        "Inside Sales",
+        "Resource Management",
+        "SEO",
+        "Digital Marketing"
+      ],
+      "order": 3
+    },
+    {
+      "title": "Languages",
+      "accent": "secondary-fixed",
+      "bullet": "◇",
+      "items": [
+        "English (Expert)",
+        "Hindi (Native)",
+        "Gujarati (Native)",
+        "Marathi (Native)",
+        "German (Beginner)"
+      ],
+      "order": 4
+    }
+  ]
+}

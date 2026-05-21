@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "n": "01.",
+      "title": "WashWizard: Founding Venture",
+      "desc": "A compact washing machine startup funded by SSIP. Orchestrated the R&D, product development, and initial market strategy to cater to hostel and PG demographics using CFD techniques.",
+      "tags": ["Startup", "Market Strategy", "Sustainable R&D"],
+      "label": "Entrepreneurship",
+      "cta": "Pitch Deck",
+      "color": "primary-container",
+      "order": 1
+    },
+    {
+      "n": "02.",
+      "title": "ANPR + GPS Railway System",
+      "desc": "Led the implementation of an ANPR and GPS system for Western Railways. Integrated hardware and developed backend-frontend connectivity for real-time vehicle processing.",
+      "tags": ["Embedded Systems", "GPS Tracking", "ANPR"],
+      "label": "Infrastructure Tech",
+      "cta": "Project Details",
+      "color": "secondary-fixed",
+      "order": 2
+    },
+    {
+      "n": "03.",
+      "title": "Case Study & Strategy Solving",
+      "desc": "Specialized in solving complex business bottlenecks through data-driven analysis and optimized workflow strategies. Focused on scaling operational efficiency for industrial clients.",
+      "tags": ["Operations", "Market Research", "Consultancy"],
+      "label": "Management Strategy",
+      "cta": "Strategic Insights",
+      "color": "primary-container",
+      "order": 3
+    },
+    {
+      "n": "04.",
+      "title": "Industrial Vending Machine",
+      "desc": "Contributed to the design and development of an automated vending machine at CIBOS Tech, integrating embedded systems and complex dispensing logic.",
+      "tags": ["Product Design", "Automation", "Embedded C"],
+      "label": "Hardware R&D",
+      "cta": "System Specs",
+      "color": "secondary-fixed",
+      "order": 4
+    }
+  ]
+}

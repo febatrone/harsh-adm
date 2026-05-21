@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "k": "01",
+      "t": "Case Studies",
+      "d": "Expertise in strategic analysis and professional strategy solving for industrial management bottlenecks and growth hurdles.",
+      "tag": "Strategy",
+      "order": 1
+    },
+    {
+      "k": "02",
+      "t": "WashWizard Startup",
+      "d": "Conceptualized and secured funding (SSIP) for a hardware startup focused on sustainable innovation in the laundry sector.",
+      "tag": "Entrepreneurship",
+      "order": 2
+    },
+    {
+      "k": "03",
+      "t": "Jagriti Yatra",
+      "d": "Shortlisted for the national enterprise journey to build India through social entrepreneurship and enterprise networking.",
+      "tag": "Social Impact",
+      "order": 3
+    },
+    {
+      "k": "04",
+      "t": "UPSC NDA Interview",
+      "d": "Successfully cleared the UPSC written examination and qualified for the SSB interview for officer selection.",
+      "tag": "Leadership",
+      "order": 4
+    },
+    {
+      "k": "05",
+      "t": "Industrial Vending Machine",
+      "d": "Developed a functional industrial vending machine integrating complex embedded systems and automated logic.",
+      "tag": "Engineering",
+      "order": 5
+    }
+  ]
+}
