@@ -71,7 +71,7 @@ collections:
               - { label: "Category Title", name: "title", widget: "string" }
               - { label: "Accent Color Class", name: "accent", widget: "string" }
               - { label: "Bullet Character", name: "bullet", widget: "string" }
-              - { label: "Skills List", name: "items", widget: "list", field: { widget: "string" } }
+              - { label: "Skills List", name: "items", widget: "list", field: { name: "skill", widget: "string", label: "Skill" } }
               - { label: "Display Order", name: "order", widget: "number", value_type: "int" }
 
   - name: "projects"
@@ -88,7 +88,7 @@ collections:
               - { label: "Project Numbering (e.g. 01.)", name: "n", widget: "string" }
               - { label: "Project Title", name: "title", widget: "string" }
               - { label: "Project Description", name: "desc", widget: "text" }
-              - { label: "Technologies / Tags", name: "tags", widget: "list", field: { widget: "string" } }
+              - { label: "Technologies / Tags", name: "tags", widget: "list", field: { name: "tag", widget: "string", label: "Tag" } }
               - { label: "Management Label (e.g. Entrepreneurship)", name: "label", widget: "string" }
               - { label: "Call to Action Text (e.g. Pitch Deck)", name: "cta", widget: "string" }
               - { label: "Vibrant Color Token (e.g. primary-container)", name: "color", widget: "string" }
@@ -203,7 +203,7 @@ collections:
               - { label: "Service Title", name: "title", widget: "string" }
               - { label: "Short Description", name: "description", widget: "text" }
               - { label: "Lucide Icon Name", name: "icon", widget: "string" }
-              - { label: "Detailed Bullet Points", name: "details", widget: "list", field: { widget: "string" } }
+              - { label: "Detailed Bullet Points", name: "details", widget: "list", field: { name: "detail", widget: "string", label: "Detail" } }
               - { label: "Display Order", name: "order", widget: "number", value_type: "int" }
 
   - name: "social_links"
